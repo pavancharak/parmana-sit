@@ -59,9 +59,9 @@ export default function ArchitectureDiagram() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-neutral-600">
-            Parmana sits between every execution request and your protected
-            business systems, ensuring that only organizationally authorized
-            actions execute.
+            Parmana sits between every execution request and your systems of
+record, ensuring that only institutionally authorized actions
+execute.
           </p>
 
         </div>
@@ -98,7 +98,7 @@ export default function ArchitectureDiagram() {
                     </div>
 
                     <div className="text-sm text-neutral-500">
-                      Requests Execution
+                      Initiates Execution Request
                     </div>
 
                   </div>
@@ -139,28 +139,28 @@ export default function ArchitectureDiagram() {
               <div className="mt-8 rounded-2xl bg-white/5 p-6">
 
                 <div className="flex justify-between py-2">
-                  <span className="text-neutral-400">
-                    Execution Request
-                  </span>
+  <span className="text-neutral-400">
+    Execution Request
+  </span>
 
-                  <span>
-                    Receive
-                  </span>
-                </div>
+  <span>
+    Receive
+  </span>
+</div>
 
-                <div className="flex justify-between py-2">
-                  <span className="text-neutral-400">
-                    Policy
-                  </span>
+<div className="flex justify-between py-2">
+  <span className="text-neutral-400">
+    Organizational Authority
+  </span>
 
-                  <span>
-                    Evaluate
-                  </span>
-                </div>
+  <span>
+    Evaluate
+  </span>
+</div>
 
-                <div className="mt-4 rounded-xl bg-emerald-500/20 px-4 py-3 text-center font-semibold text-emerald-300">
-                  ✓ Authorized to Execute
-                </div>
+<div className="mt-4 rounded-xl bg-emerald-500/20 px-4 py-3 text-center font-semibold text-emerald-300">
+  ✓ Authorized to Execute
+</div>
 
               </div>
 
@@ -171,11 +171,11 @@ export default function ArchitectureDiagram() {
                 </span>
 
                 <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
-                  Policy Driven
+                  Authority Driven
                 </span>
 
                 <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
-                  Independent of AI
+                  Vendor & Model Agnostic
                 </span>
 
               </div>
@@ -189,12 +189,12 @@ export default function ArchitectureDiagram() {
 
           </div>
 
-          {/* Business Systems */}
+          {/* SYSTEMS OF RECORD */}
 
           <div>
 
             <p className="label mb-6">
-              BUSINESS SYSTEMS
+              SYSTEMS OF RECORD
             </p>
 
             <div className="space-y-4">
@@ -217,7 +217,7 @@ export default function ArchitectureDiagram() {
                     </div>
 
                     <div className="text-sm text-neutral-500">
-                      Authorized Execution Endpoint
+                      Authority Enforcement Point
                     </div>
 
                   </div>
@@ -237,12 +237,14 @@ export default function ArchitectureDiagram() {
         <div className="mt-20 rounded-3xl border border-neutral-200 bg-neutral-50 p-10 text-center">
 
           <h3 className="text-3xl font-semibold">
-            Execution authority never leaves your organization.
+            Authority remains with the institution.
           </h3>
 
           <p className="mx-auto mt-4 max-w-3xl text-neutral-600">
-            AI may decide what it wants to do. Parmana ensures organizational
-            policy determines what is actually allowed to execute.
+Execution requests may originate from AI agents, people, applications,
+or attackers. Parmana ensures organizational authority determines
+what is actually allowed to execute before any action reaches systems
+of record.
           </p>
 
         </div>
