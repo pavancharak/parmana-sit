@@ -43,11 +43,11 @@ return(
 <h1 className="mt-8 text-5xl font-semibold tracking-tight md:text-7xl">
 Human Authority Infrastructure
 <br/>
-<span className="text-neutral-500">For AI Execution</span>
+<span className="text-neutral-500">for Machine-Speed Execution</span>
 </h1>
 
 <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-neutral-600">
-Every execution request is evaluated against organizational policy before reaching business systems.
+Every execution request is evaluated against organizational authority before reaching business systems.
 </p>
 </div>
 
@@ -76,7 +76,7 @@ Every execution request is evaluated against organizational policy before reachi
 <div className="mt-10 space-y-4 rounded-2xl bg-white/5 p-6">
 <div className="text-center">Execution Request</div>
 <div className="text-center text-neutral-500">↓</div>
-<div className="text-center">Evaluate Organizational Policy</div>
+<div className="text-center">Evaluate Organizational Authority</div>
 <div className="text-center text-neutral-500">↓</div>
 <div className="text-center">Authorization Decision</div>
 <div className="grid grid-cols-2 gap-3 pt-4">
@@ -86,7 +86,7 @@ Every execution request is evaluated against organizational policy before reachi
 </div>
 
 <div className="mt-8 flex flex-wrap justify-center gap-2">
-{["Deterministic","Policy Driven","Independent of AI"].map(x=><span key={x} className="rounded-full border border-neutral-700 px-3 py-1 text-xs">{x}</span>)}
+{["Deterministic","Policy Driven","Vendor & Model Agnostic"].map(x=><span key={x} className="rounded-full border border-neutral-700 px-3 py-1 text-xs">{x}</span>)}
 </div>
 </div>
 
