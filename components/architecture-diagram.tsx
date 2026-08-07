@@ -14,7 +14,6 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-
 const sources = [
   { name: "AI Agent", icon: Bot },
   { name: "Human", icon: UserRound },
@@ -33,10 +32,10 @@ const systems = [
 
 export default function ArchitectureDiagram() {
   return (
-    <section className="bg-white py-16">
-      <div className="container">
+    <section className="bg-white py-20">
+      <div className="container mx-auto max-w-7xl px-6">
 
-        <div className="mb-12 text-center">
+        <div className="mb-16 text-center">
           <p className="label">
             EXECUTION AUTHORIZATION FLOW
           </p>
@@ -47,140 +46,164 @@ export default function ArchitectureDiagram() {
             Passes Through Parmana
           </h2>
 
-          <p className="body mt-8 max-w-3xl mx-auto">
+          <p className="body mx-auto mt-8 max-w-3xl">
             Every execution request is evaluated against organizational policy
-            before it reaches a business system.
+            before it reaches protected business systems.
           </p>
         </div>
 
-        <div className="relative h-[620px]">
+        <div className="grid grid-cols-[300px_1fr_300px] items-center gap-16">
 
-          <ConnectionLines />
+          {/* Sources */}
 
-          <div className="absolute inset-0 grid grid-cols-[300px_1fr_300px] items-center gap-12">
+          <div className="space-y-4">
 
-            {/* Sources */}
+            <p className="label mb-4">
+              EXECUTION REQUESTS
+            </p>
 
-            <div className="space-y-4">
+            {sources.map(({ name, icon: Icon }) => (
 
-              {sources.map(({ name, icon: Icon }) => (
+              <div
+                key={name}
+                className="flex h-20 items-center gap-4 rounded-2xl border border-neutral-200 bg-white px-6 shadow-sm transition hover:-translate-y-1 hover:border-black hover:shadow-lg"
+              >
 
-                <div
-                  key={name}
-                  className="group flex h-20 items-center gap-4 rounded-2xl border border-neutral-200 bg-white px-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black hover:shadow-lg"
-                >
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-neutral-100">
+                  <Icon size={24} strokeWidth={1.75} />
+                </div>
 
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-neutral-100 transition group-hover:bg-black group-hover:text-white">
-
-                    <Icon
-                      size={24}
-                      strokeWidth={1.75}
-                    />
-
+                <div>
+                  <div className="font-semibold text-neutral-900">
+                    {name}
                   </div>
 
-                  <div>
-
-                    <div className="font-semibold">
-                      {name}
-                    </div>
-
-                    <div className="text-sm text-neutral-500">
-                      Execution Source
-                    </div>
-
+                  <div className="text-sm text-neutral-500">
+                    Execution Request
                   </div>
-
                 </div>
 
-              ))}
+              </div>
 
-            </div>
+            ))}
 
-            {/* Parmana */}
+          </div>
 
-            <div className="flex justify-center">
+          {/* Parmana */}
 
-              <div className="w-[420px] rounded-[36px] bg-black px-12 py-12 text-center text-white shadow-2xl">
+          <div className="flex justify-center">
 
-                <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white/10">
+            <div className="w-full max-w-md rounded-[36px] bg-black px-12 py-12 text-center text-white shadow-2xl">
 
-                  <ShieldCheck
-                    size={48}
-                    strokeWidth={1.5}
-                  />
+              <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white/10">
 
-                </div>
+                <ShieldCheck
+                  size={48}
+                  strokeWidth={1.5}
+                />
 
-                <h2 className="mt-8 text-4xl font-semibold">
-                  Parmana
-                </h2>
+              </div>
 
-                <p className="mt-3 text-neutral-300">
-                  Execution Authorization Infrastructure
-                </p>
+              <h3 className="mt-8 text-4xl font-semibold">
+                Parmana
+              </h3>
 
-                <div className="mt-8 inline-flex rounded-full bg-white/10 px-5 py-2 text-sm">
-                  Checking Policy...
-                </div>
+              <p className="mt-3 text-neutral-300">
+                Execution Authorization Layer
+              </p>
 
-                <div className="mt-10 flex flex-wrap justify-center gap-2">
+              <div className="mt-8 inline-flex rounded-full bg-white/10 px-5 py-2 text-sm">
+                Evaluating Organizational Policy
+              </div>
 
-                  <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
-                    Deterministic
+              <div className="mt-10 space-y-3 text-left">
+
+                <div className="flex items-center justify-between rounded-lg bg-white/5 px-4 py-3">
+                  <span className="text-neutral-300">
+                    Request
                   </span>
 
-                  <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
-                    Policy Driven
+                  <span className="font-medium">
+                    Evaluate
                   </span>
-
-                  <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
-                    Independent of AI
-                  </span>
-
                 </div>
+
+                <div className="flex items-center justify-between rounded-lg bg-white/5 px-4 py-3">
+                  <span className="text-neutral-300">
+                    Policy
+                  </span>
+
+                  <span className="font-medium">
+                    Organizational
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between rounded-lg bg-emerald-600/20 px-4 py-3">
+                  <span>
+                    Decision
+                  </span>
+
+                  <span className="font-semibold text-emerald-300">
+                    Authorized
+                  </span>
+                </div>
+
+              </div>
+
+              <div className="mt-10 flex flex-wrap justify-center gap-2">
+
+                <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
+                  Deterministic
+                </span>
+
+                <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
+                  Policy Driven
+                </span>
+
+                <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
+                  Independent of AI
+                </span>
 
               </div>
 
             </div>
 
-            {/* Business Systems */}
+          </div>
 
-            <div className="space-y-4">
+          {/* Business Systems */}
 
-              {systems.map(({ name, icon: Icon }) => (
+          <div className="space-y-4">
 
-                <div
-                  key={name}
-                  className="group flex h-20 items-center gap-4 rounded-2xl border border-neutral-200 bg-white px-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-black hover:shadow-lg"
-                >
+            <p className="label mb-4">
+              PROTECTED BUSINESS SYSTEMS
+            </p>
 
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-neutral-100 transition group-hover:bg-black group-hover:text-white">
+            {systems.map(({ name, icon: Icon }) => (
 
-                    <Icon
-                      size={22}
-                      strokeWidth={1.75}
-                    />
+              <div
+                key={name}
+                className="flex h-20 items-center gap-4 rounded-2xl border border-neutral-200 bg-white px-6 shadow-sm transition hover:-translate-y-1 hover:border-black hover:shadow-lg"
+              >
 
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-neutral-100">
+                  <Icon size={22} strokeWidth={1.75} />
+                </div>
+
+                <div>
+
+                  <div className="font-semibold text-neutral-900">
+                    {name}
                   </div>
 
-                  <div>
-
-                    <div className="font-semibold">
-                      {name}
-                    </div>
-
-                    <div className="text-sm text-neutral-500">
-                      Business System
-                    </div>
-
+                  <div className="text-sm text-neutral-500">
+                    Protected Resource
                   </div>
 
                 </div>
 
-              ))}
+              </div>
 
-            </div>
+            ))}
 
           </div>
 
