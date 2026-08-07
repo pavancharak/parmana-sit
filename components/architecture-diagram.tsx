@@ -9,13 +9,12 @@ import {
   ShieldAlert, CreditCard, Users, Building2, KeyRound, Server, Database
 } from "lucide-react";
 
-const sources=[
- {name:"AI Agent",sub:"Requests Execution",Icon:Bot},
- {name:"Human",sub:"Requests Execution",Icon:UserRound},
- {name:"Application",sub:"Requests Execution",Icon:AppWindow},
- {name:"Attacker",sub:"Attempts Unauthorized Execution",Icon:ShieldAlert},
+const sources = [
+  { name: "AI Agent", sub: "Initiates Execution Request", Icon: Bot },
+  { name: "Human", sub: "Initiates Execution Request", Icon: UserRound },
+  { name: "Application", sub: "Initiates Execution Request", Icon: AppWindow },
+  { name: "Attacker", sub: "Attempts Unauthorized Execution", Icon: ShieldAlert },
 ];
-
 const systems=[
  {name:"Payments",Icon:CreditCard},
  {name:"CRM",Icon:Users},
@@ -47,7 +46,7 @@ Human Authority Infrastructure
 </h1>
 
 <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-neutral-600">
-Every execution request is evaluated against organizational authority before reaching business systems.
+Every execution request is evaluated against organizational authority before reaching systems of record.
 </p>
 </div>
 
@@ -76,7 +75,7 @@ Every execution request is evaluated against organizational authority before rea
 <div className="mt-10 space-y-4 rounded-2xl bg-white/5 p-6">
 <div className="text-center">Execution Request</div>
 <div className="text-center text-neutral-500">↓</div>
-<div className="text-center">Evaluate Organizational Authority</div>
+<div className="text-center">v</div>
 <div className="text-center text-neutral-500">↓</div>
 <div className="text-center">Authorization Decision</div>
 <div className="grid grid-cols-2 gap-3 pt-4">
@@ -86,17 +85,28 @@ Every execution request is evaluated against organizational authority before rea
 </div>
 
 <div className="mt-8 flex flex-wrap justify-center gap-2">
-{["Deterministic","Policy Driven","Vendor & Model Agnostic"].map(x=><span key={x} className="rounded-full border border-neutral-700 px-3 py-1 text-xs">{x}</span>)}
+  {[
+    "Deterministic",
+    "Authority Driven",
+    "Vendor & Model Agnostic",
+  ].map((x) => (
+    <span
+      key={x}
+      className="rounded-full border border-neutral-700 px-3 py-1 text-xs"
+    >
+      {x}
+    </span>
+  ))}
 </div>
 </div>
 
 <div>
-<h3 className="mb-8 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-500">Protected Business Systems</h3>
+<h3 className="mb-8 text-sm font-semibold uppercase tracking-[0.2em] text-neutral-500">Systems of Record</h3>
 <div className="space-y-6">
 {systems.map(({name,Icon})=>(
 <div key={name} className="flex items-center gap-4">
 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-neutral-100"><Icon size={24}/></div>
-<div><div className="font-semibold">{name}</div><div className="text-sm text-neutral-500">Authorized Execution Endpoint</div></div>
+<div><div className="font-semibold">{name}</div><div className="text-sm text-neutral-500">Authority Enforcement Point</div></div>
 </div>
 ))}
 </div>
@@ -105,9 +115,12 @@ Every execution request is evaluated against organizational authority before rea
 </div>
 
 <div className="mt-20 rounded-3xl border border-neutral-200 bg-neutral-50 p-10 text-center">
-<p className="text-3xl font-semibold">Execution authority never leaves your organization.</p>
+<p className="text-3xl font-semibold">
+  Authority remains with the institution.
+</p>
+
 <p className="mx-auto mt-4 max-w-3xl text-neutral-600">
-Parmana ensures every execution request is evaluated against organizational policy before reaching business systems.
+  Parmana ensures Every execution request is evaluated against institutional authority before reaching systems of record.
 </p>
 </div>
 
