@@ -27,7 +27,7 @@ const systems=[
 
 export default function ArchitectureDiagram(){
 return(
-<section className="bg-white pt-24 pb-24">
+<section className="bg-white pt-12 pb-24">
 <div className="mx-auto max-w-7xl px-6">
 
 <Link href="/" className="inline-flex items-center gap-2 rounded-lg border border-neutral-200 px-4 py-2 text-sm hover:border-black">
