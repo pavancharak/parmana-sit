@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Bot,
   UserRound,
@@ -10,6 +11,8 @@ import {
   Server,
   Database,
   ArrowRight,
+  ChevronLeft,
+  ShieldCheck,
 } from "lucide-react";
 
 export default function ArchitectureDiagram() {
@@ -30,31 +33,82 @@ export default function ArchitectureDiagram() {
   ];
 
   return (
-    <section className="py-12">
+    <section className="bg-white py-20">
       <div className="mx-auto max-w-7xl px-6">
 
-        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-10">
+        {/* Back */}
+
+        <Link
+          href="/"
+          className="mb-10 inline-flex items-center gap-2 text-sm font-medium text-neutral-500 transition hover:text-black"
+        >
+          <ChevronLeft size={16} />
+          Back to Home
+        </Link>
+
+        {/* Header */}
+
+        <div className="mb-16 text-center">
+
+          <p className="label">
+            ARCHITECTURE
+          </p>
+
+          <h1 className="mt-6 text-5xl font-semibold tracking-tight md:text-6xl">
+            Where Parmana Fits
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-neutral-600">
+            Parmana sits between every execution request and your protected
+            business systems, ensuring that only organizationally authorized
+            actions execute.
+          </p>
+
+        </div>
+
+        {/* Diagram */}
+
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-12">
 
           {/* Sources */}
 
           <div>
+
             <p className="label mb-6">
               EXECUTION SOURCES
             </p>
 
             <div className="space-y-4">
+
               {sources.map(({ name, icon: Icon }) => (
+
                 <div
                   key={name}
                   className="flex items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <Icon size={28} strokeWidth={1.6} />
-                  <span className="text-lg font-semibold">
-                    {name}
-                  </span>
+
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-neutral-100">
+                    <Icon size={24} />
+                  </div>
+
+                  <div>
+
+                    <div className="font-semibold">
+                      {name}
+                    </div>
+
+                    <div className="text-sm text-neutral-500">
+                      Requests Execution
+                    </div>
+
+                  </div>
+
                 </div>
+
               ))}
+
             </div>
+
           </div>
 
           {/* Parmana */}
@@ -63,35 +117,64 @@ export default function ArchitectureDiagram() {
 
             <ArrowRight
               size={36}
-              strokeWidth={1.5}
-              className="mb-8 text-neutral-400"
+              className="mb-8 text-neutral-300"
             />
 
-            <div className="w-[420px] rounded-[32px] bg-black px-10 py-12 text-center text-white shadow-2xl">
+            <div className="w-[440px] rounded-[36px] bg-black px-10 py-12 text-white shadow-2xl">
 
-              <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-white/10">
-                <div className="text-4xl font-bold">P</div>
+              <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white/10">
+
+                <ShieldCheck size={46} />
+
               </div>
 
-              <h2 className="text-4xl font-semibold">
+              <h2 className="mt-8 text-center text-4xl font-semibold">
                 Parmana
               </h2>
 
-              <p className="mt-3 text-neutral-300">
-                Execution Authorization Infrastructure
+              <p className="mt-3 text-center text-neutral-300">
+                Human Authority Infrastructure
               </p>
+
+              <div className="mt-8 rounded-2xl bg-white/5 p-6">
+
+                <div className="flex justify-between py-2">
+                  <span className="text-neutral-400">
+                    Execution Request
+                  </span>
+
+                  <span>
+                    Receive
+                  </span>
+                </div>
+
+                <div className="flex justify-between py-2">
+                  <span className="text-neutral-400">
+                    Policy
+                  </span>
+
+                  <span>
+                    Evaluate
+                  </span>
+                </div>
+
+                <div className="mt-4 rounded-xl bg-emerald-500/20 px-4 py-3 text-center font-semibold text-emerald-300">
+                  ✓ Authorized to Execute
+                </div>
+
+              </div>
 
               <div className="mt-8 flex flex-wrap justify-center gap-2">
 
-                <span className="rounded-full border border-neutral-700 px-3 py-2 text-xs">
+                <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
                   Deterministic
                 </span>
 
-                <span className="rounded-full border border-neutral-700 px-3 py-2 text-xs">
+                <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
                   Policy Driven
                 </span>
 
-                <span className="rounded-full border border-neutral-700 px-3 py-2 text-xs">
+                <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
                   Independent of AI
                 </span>
 
@@ -101,8 +184,7 @@ export default function ArchitectureDiagram() {
 
             <ArrowRight
               size={36}
-              strokeWidth={1.5}
-              className="mt-8 text-neutral-400"
+              className="mt-8 text-neutral-300"
             />
 
           </div>
@@ -110,24 +192,58 @@ export default function ArchitectureDiagram() {
           {/* Business Systems */}
 
           <div>
+
             <p className="label mb-6">
               BUSINESS SYSTEMS
             </p>
 
             <div className="space-y-4">
+
               {systems.map(({ name, icon: Icon }) => (
+
                 <div
                   key={name}
                   className="flex items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <Icon size={28} strokeWidth={1.6} />
-                  <span className="text-lg font-medium">
-                    {name}
-                  </span>
+
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-neutral-100">
+                    <Icon size={24} />
+                  </div>
+
+                  <div>
+
+                    <div className="font-semibold">
+                      {name}
+                    </div>
+
+                    <div className="text-sm text-neutral-500">
+                      Authorized Execution Endpoint
+                    </div>
+
+                  </div>
+
                 </div>
+
               ))}
+
             </div>
+
           </div>
+
+        </div>
+
+        {/* Footer */}
+
+        <div className="mt-20 rounded-3xl border border-neutral-200 bg-neutral-50 p-10 text-center">
+
+          <h3 className="text-3xl font-semibold">
+            Execution authority never leaves your organization.
+          </h3>
+
+          <p className="mx-auto mt-4 max-w-3xl text-neutral-600">
+            AI may decide what it wants to do. Parmana ensures organizational
+            policy determines what is actually allowed to execute.
+          </p>
 
         </div>
 
