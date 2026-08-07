@@ -33,7 +33,9 @@ export default function Contact() {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-6">
+
         {/* Header */}
+
         <div className="max-w-4xl">
           <span className="text-sm font-semibold uppercase tracking-widest text-blue-600">
             Contact
@@ -50,7 +52,8 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* Cards */}
+        {/* Focus Areas */}
+
         <div className="mt-20 grid gap-8 md:grid-cols-3">
           {sections.map((item) => {
             const Icon = item.icon;
@@ -58,7 +61,7 @@ export default function Contact() {
             return (
               <div
                 key={item.title}
-                className="rounded-2xl border border-gray-200 bg-white p-8 transition hover:shadow-lg"
+                className="rounded-2xl border border-gray-200 bg-white p-8 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 <Icon className="h-8 w-8 text-blue-600" />
 
@@ -75,9 +78,9 @@ export default function Contact() {
         </div>
 
         {/* Contact Methods */}
+
         <div className="mt-20 grid gap-8 lg:grid-cols-2">
 
-          {/* Email */}
           <div className="rounded-3xl border border-gray-200 bg-gray-50 p-10">
             <Mail className="h-8 w-8 text-blue-600" />
 
@@ -92,17 +95,16 @@ export default function Contact() {
 
             <a
               href="mailto:hello@parmanasystems.com"
-              className="mt-8 inline-flex items-center gap-2 text-xl font-semibold hover:text-blue-600"
+              className="mt-8 inline-flex items-center gap-2 text-xl font-semibold hover:text-blue-600 transition"
             >
               hello@parmanasystems.com
               <ArrowRight className="h-5 w-5" />
             </a>
           </div>
 
-          {/* LinkedIn */}
           <div className="rounded-3xl border border-gray-200 bg-gray-50 p-10">
 
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-lg font-bold text-white">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0A66C2] text-lg font-bold text-white">
               in
             </div>
 
@@ -111,15 +113,15 @@ export default function Contact() {
             </h3>
 
             <p className="mt-4 leading-7 text-gray-600">
-              Connect for company updates, product announcements,
-              research, and industry discussions.
+              Connect for product updates, research,
+              and discussions around authority infrastructure.
             </p>
 
             <a
               href="https://www.linkedin.com/in/pavancharak/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2 text-xl font-semibold hover:text-blue-600"
+              className="mt-8 inline-flex items-center gap-2 text-xl font-semibold hover:text-blue-600 transition"
             >
               linkedin.com/in/pavancharak
               <ArrowRight className="h-5 w-5" />
@@ -130,13 +132,14 @@ export default function Contact() {
         </div>
 
         {/* CTA */}
+
         <div className="mt-24 rounded-3xl bg-black px-10 py-16 text-center text-white">
 
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-4xl font-bold md:text-5xl">
             Building Authority Infrastructure
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-300">
+          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-gray-300">
             Parmana provides the infrastructure that connects institutional
             authority to execution through deterministic, transparent,
             and verifiable decisions.
@@ -144,13 +147,14 @@ export default function Contact() {
 
           <a
             href="mailto:hello@parmanasystems.com"
-            className="mt-10 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:bg-gray-100"
+            className="mt-10 inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-lg font-semibold text-black transition hover:bg-gray-100"
           >
-            Contact Parmana
+            Contact Us
             <ArrowRight className="h-5 w-5" />
           </a>
 
         </div>
+
       </div>
     </section>
   );
