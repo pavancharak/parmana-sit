@@ -133,27 +133,27 @@ export default function Contact() {
 
         {/* CTA */}
 
-        <div className="mt-24 rounded-3xl bg-black px-10 py-16 text-center text-white">
+<div className="mt-24 rounded-3xl bg-black px-10 py-16 text-center text-white">
 
-          <h2 className="text-4xl font-bold md:text-5xl">
-            Building Authority Infrastructure
-          </h2>
+  <h2 className="text-4xl font-bold md:text-5xl">
+    Building Authority Infrastructure
+  </h2>
 
-          <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-gray-300">
-            Parmana provides the infrastructure that connects institutional
-            authority to execution through deterministic, transparent,
-            and verifiable decisions.
-          </p>
+  <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-gray-300">
+    Parmana provides the infrastructure that connects institutional
+    authority to execution through deterministic, transparent,
+    and verifiable decisions.
+  </p>
 
-          <a
-            href="mailto:hello@parmanasystems.com"
-            className="mt-10 inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 text-lg font-semibold text-black transition hover:bg-gray-100"
-          >
-            Contact Us
-            <ArrowRight className="h-5 w-5" />
-          </a>
+  <a
+    href="mailto:hello@parmanasystems.com"
+    className="mt-10 inline-flex items-center gap-3 rounded-xl bg-[#2563EB] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-xl"
+  >
+    Contact Us
+    <ArrowRight className="h-5 w-5 text-white" />
+  </a>
 
-        </div>
+</div>
 
       </div>
     </section>
