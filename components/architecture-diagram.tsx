@@ -14,7 +14,6 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-import ConnectionLines from "./connection-lines";
 
 const sources = [
   { name: "AI Agent", icon: Bot },
