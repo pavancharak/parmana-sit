@@ -22,11 +22,11 @@ export default function Hero() {
             </p>
 
             <p className="body">
-              Every execution request has the potential to change a business
-              system.
+              Every execution request has the potential to change the state of
+              a business system.
             </p>
 
-            <p className="body font-semibold text-neutral-900">
+            <p className="text-xl font-semibold leading-9 text-neutral-900">
               Organizations need a way to ensure that only authorized actions
               execute.
             </p>
@@ -35,14 +35,18 @@ export default function Hero() {
           <div className="mt-14 flex flex-wrap items-center gap-4">
             <a
               href="/why"
-              className="inline-flex h-12 items-center justify-center rounded-md bg-black px-8 text-sm font-medium text-white transition-colors duration-200 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+              className="inline-flex h-12 items-center justify-center rounded-md px-8 text-sm font-medium transition-colors duration-200"
+              style={{
+                backgroundColor: "#000",
+                color: "#fff",
+              }}
             >
               Why It Matters
             </a>
 
             <a
               href="/architecture"
-              className="inline-flex h-12 items-center justify-center rounded-md rounded-md border border-neutral-300 bg-white px-8 text-sm font-medium text-neutral-900 transition-colors duration-200 hover:border-black hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+              className="inline-flex h-12 items-center justify-center rounded-md border border-neutral-300 bg-white px-8 text-sm font-medium text-neutral-900 transition-colors duration-200 hover:border-black hover:bg-neutral-50"
             >
               Architecture
             </a>
