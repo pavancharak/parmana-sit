@@ -1,121 +1,132 @@
+import {
+  Bot,
+  UserRound,
+  AppWindow,
+  ShieldAlert,
+  CreditCard,
+  Users,
+  Building2,
+  KeyRound,
+  Server,
+  Database,
+  ArrowRight,
+} from "lucide-react";
+
 export default function ArchitectureDiagram() {
-  const sources = ["AI Agent", "Human", "Application", "Attacker"];
+  const sources = [
+    { name: "AI Agent", icon: Bot },
+    { name: "Human", icon: UserRound },
+    { name: "Application", icon: AppWindow },
+    { name: "Attacker", icon: ShieldAlert },
+  ];
 
   const systems = [
-    "Payments",
-    "CRM",
-    "ERP",
-    "Identity",
-    "Infrastructure",
-    "Databases",
+    { name: "Payments", icon: CreditCard },
+    { name: "CRM", icon: Users },
+    { name: "ERP", icon: Building2 },
+    { name: "Identity", icon: KeyRound },
+    { name: "Infrastructure", icon: Server },
+    { name: "Databases", icon: Database },
   ];
 
   return (
-    <section className="py-24">
+    <section className="py-12">
       <div className="mx-auto max-w-7xl px-6">
 
-        {/* Sources */}
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-10">
 
-        <div className="text-center">
-          <p className="label mb-8">
-            EXECUTION SOURCES
-          </p>
+          {/* Sources */}
 
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-            {sources.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-neutral-200 bg-white py-8 text-lg font-semibold shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Connector */}
-
-        <div className="flex flex-col items-center py-14">
-          <div className="h-16 w-px bg-neutral-300" />
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            className="text-neutral-600"
-          >
-            <path d="M12 22L5 11h14L12 22Z" fill="currentColor" />
-          </svg>
-        </div>
-
-        {/* Parmana */}
-
-        <div className="text-center">
-
-          <p className="label mb-8">
-            AUTHORIZATION LAYER
-          </p>
-
-          <div className="mx-auto max-w-2xl rounded-[32px] bg-black px-16 py-14 text-white shadow-2xl">
-
-            <h3 className="text-5xl font-semibold">
-              Parmana
-            </h3>
-
-            <p className="mt-5 text-xl text-neutral-300">
-              Execution Authorization Infrastructure
+          <div>
+            <p className="label mb-6">
+              EXECUTION SOURCES
             </p>
 
-            <div className="mt-10 flex justify-center gap-3 flex-wrap">
+            <div className="space-y-4">
+              {sources.map(({ name, icon: Icon }) => (
+                <div
+                  key={name}
+                  className="flex items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <Icon size={28} strokeWidth={1.6} />
+                  <span className="text-lg font-semibold">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
 
-              <span className="rounded-full border border-neutral-700 px-4 py-2 text-sm">
-                Deterministic
-              </span>
+          {/* Parmana */}
 
-              <span className="rounded-full border border-neutral-700 px-4 py-2 text-sm">
-                Policy Driven
-              </span>
+          <div className="flex flex-col items-center">
 
-              <span className="rounded-full border border-neutral-700 px-4 py-2 text-sm">
-                Independent of AI
-              </span>
+            <ArrowRight
+              size={36}
+              strokeWidth={1.5}
+              className="mb-8 text-neutral-400"
+            />
+
+            <div className="w-[420px] rounded-[32px] bg-black px-10 py-12 text-center text-white shadow-2xl">
+
+              <div className="mx-auto mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-white/10">
+                <div className="text-4xl font-bold">P</div>
+              </div>
+
+              <h2 className="text-4xl font-semibold">
+                Parmana
+              </h2>
+
+              <p className="mt-3 text-neutral-300">
+                Execution Authorization Infrastructure
+              </p>
+
+              <div className="mt-8 flex flex-wrap justify-center gap-2">
+
+                <span className="rounded-full border border-neutral-700 px-3 py-2 text-xs">
+                  Deterministic
+                </span>
+
+                <span className="rounded-full border border-neutral-700 px-3 py-2 text-xs">
+                  Policy Driven
+                </span>
+
+                <span className="rounded-full border border-neutral-700 px-3 py-2 text-xs">
+                  Independent of AI
+                </span>
+
+              </div>
 
             </div>
 
+            <ArrowRight
+              size={36}
+              strokeWidth={1.5}
+              className="mt-8 text-neutral-400"
+            />
+
           </div>
 
-        </div>
+          {/* Business Systems */}
 
-        {/* Connector */}
+          <div>
+            <p className="label mb-6">
+              BUSINESS SYSTEMS
+            </p>
 
-        <div className="flex flex-col items-center py-14">
-          <div className="h-16 w-px bg-neutral-300" />
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            className="text-neutral-600"
-          >
-            <path d="M12 22L5 11h14L12 22Z" fill="currentColor" />
-          </svg>
-        </div>
-
-        {/* Business Systems */}
-
-        <div className="text-center">
-
-          <p className="label mb-8">
-            BUSINESS SYSTEMS
-          </p>
-
-          <div className="grid grid-cols-2 gap-6 md:grid-cols-3">
-            {systems.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-neutral-200 bg-white py-8 text-lg font-medium shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-              >
-                {item}
-              </div>
-            ))}
+            <div className="space-y-4">
+              {systems.map(({ name, icon: Icon }) => (
+                <div
+                  key={name}
+                  className="flex items-center gap-4 rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <Icon size={28} strokeWidth={1.6} />
+                  <span className="text-lg font-medium">
+                    {name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>
