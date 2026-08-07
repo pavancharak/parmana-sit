@@ -1,11 +1,14 @@
 "use client";
 
+import Link from "next/link";
+
 import {
   Mail,
   Building2,
   Handshake,
   FlaskConical,
   ArrowRight,
+  ArrowLeft,
 } from "lucide-react";
 
 const sections = [
@@ -33,7 +36,15 @@ export default function Contact() {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-6">
-
+         <div className="mb-12">
+  <Link
+    href="/"
+    className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 transition-all hover:border-[#2563EB] hover:text-[#2563EB]"
+  >
+    <ArrowLeft className="h-4 w-4" />
+    Back to Home
+  </Link>
+</div>
         {/* Header */}
 
         <div className="max-w-4xl">
@@ -131,7 +142,7 @@ export default function Contact() {
 
         </div>
 
-        {/* CTA */}
+       {/* CTA */}
 
 <div className="mt-24 rounded-3xl bg-black px-10 py-16 text-center text-white">
 
@@ -146,16 +157,16 @@ export default function Contact() {
   </p>
 
   <a
-    href="mailto:hello@parmanasystems.com"
+    href="mailto:founder@parmanasystems.com"
     className="mt-10 inline-flex items-center gap-3 rounded-xl bg-[#2563EB] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-200 hover:bg-[#1D4ED8] hover:shadow-xl"
   >
     Contact Us
-    <ArrowRight className="h-5 w-5 text-white" />
+    <ArrowRight className="h-5 w-5" />
   </a>
 
 </div>
 
-      </div>
-    </section>
+</div>
+</section>
   );
 }
