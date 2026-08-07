@@ -139,7 +139,7 @@ export default function Contact() {
           </p>
 
           <a
-            href="mailto:hello@parmanasystems.com"
+            href="mailto:founder@parmanasystems.com"
             className="mt-10 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:bg-gray-100"
           >
             Contact Parmana
