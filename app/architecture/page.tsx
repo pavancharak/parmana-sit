@@ -1,124 +1,90 @@
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-import Section from "@/components/section";
-
-export default function ArchitecturePage() {
+export default function ArchitectureDiagram() {
   return (
-    <>
-      <Navbar />
+    <div className="mt-16 rounded-3xl border border-neutral-200 bg-gradient-to-b from-white to-neutral-50 p-12">
 
-      <main>
-        <section className="bg-white">
-          <div className="container section">
-            <div className="max-w-5xl">
-              <p className="label">
-                Architecture
-              </p>
+      {/* Sources */}
 
-              <h1 className="heading-xl mt-6">
-                The Missing Layer
-                <br />
-                Between AI Agents And Business Systems.
-              </h1>
+      <div className="grid grid-cols-4 gap-6">
 
-              <p className="body mt-12">
-                AI agents can initiate execution requests.
-              </p>
-
-              <p className="body">
-                Business systems execute those requests.
-              </p>
-
-              <p className="body highlight">
-                Every execution request should be authorized before it reaches a
-                business system.
-              </p>
+        {["AI Agent", "Human", "Application", "Attacker"].map((item) => (
+          <div
+            key={item}
+            className="rounded-2xl border border-neutral-200 bg-white p-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <div className="text-lg font-semibold text-neutral-900">
+              {item}
             </div>
           </div>
-        </section>
+        ))}
 
-        <Section
-          label="The Architecture"
-          title="Where Parmana Fits."
-        >
-          <pre className="overflow-x-auto rounded-xl border border-neutral-200 bg-neutral-50 p-8 text-lg leading-8 text-neutral-800">
-{`AI Agent
-Human
-Application
-      │
-      ▼
-   Parmana
-Execution Authorization
-      │
-      ▼
-Business Systems`}
-          </pre>
-        </Section>
+      </div>
 
-        <Section
-          background="gray"
-          label="Independent"
-          title="Independent Of AI."
-        >
-          <p className="body">
-            Parmana does not depend on a specific AI model.
-          </p>
+      {/* Arrow */}
 
-          <p className="body">
-            It does not depend on a specific AI agent.
-          </p>
+      <div className="my-10 flex justify-center">
+        <div className="flex flex-col items-center">
+          <div className="h-12 w-px bg-neutral-300" />
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 22L4 12h16L12 22z"
+              fill="#171717"
+            />
+          </svg>
+        </div>
+      </div>
 
-          <p className="body">
-            It does not depend on a specific application.
-          </p>
+      {/* Parmana */}
 
-          <p className="body highlight">
-            It evaluates every execution request against organizational policy.
-          </p>
-        </Section>
+      <div className="mx-auto max-w-xl rounded-3xl bg-black p-10 text-center text-white shadow-2xl">
 
-        <Section
-          label="Deterministic"
-          title="One Request. One Decision."
-        >
-          <p className="body">
-            Every execution request produces one deterministic outcome.
-          </p>
+        <div className="text-3xl font-semibold">
+          Parmana
+        </div>
 
-          <div className="mt-12 rounded-xl border border-neutral-200 p-8">
-            <div className="space-y-6">
-              <div className="text-3xl font-semibold">
-                ✓ Authorized → Execute
-              </div>
+        <div className="mt-3 text-neutral-300">
+          Execution Authorization Infrastructure
+        </div>
 
-              <div className="text-3xl font-semibold">
-                ✕ Unauthorized → Block
-              </div>
+      </div>
+
+      {/* Arrow */}
+
+      <div className="my-10 flex justify-center">
+        <div className="flex flex-col items-center">
+          <div className="h-12 w-px bg-neutral-300" />
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 22L4 12h16L12 22z"
+              fill="#171717"
+            />
+          </svg>
+        </div>
+      </div>
+
+      {/* Business Systems */}
+
+      <div className="grid grid-cols-3 gap-6">
+
+        {[
+          "Payments",
+          "CRM",
+          "ERP",
+          "Identity",
+          "Infrastructure",
+          "Databases",
+        ].map((item) => (
+          <div
+            key={item}
+            className="rounded-2xl border border-neutral-200 bg-white p-6 text-center shadow-sm"
+          >
+            <div className="font-medium text-neutral-900">
+              {item}
             </div>
           </div>
-        </Section>
+        ))}
 
-        <Section
-          background="gray"
-          label="Result"
-          title="Execution Authority Remains With The Organization."
-        >
-          <p className="body">
-            AI agents determine what they want to execute.
-          </p>
+      </div>
 
-          <p className="body">
-            Organizational policy determines what is allowed to execute.
-          </p>
-
-          <p className="body highlight">
-            Parmana ensures every execution request is evaluated before reaching
-            your business systems.
-          </p>
-        </Section>
-      </main>
-
-      <Footer />
-    </>
+    </div>
   );
 }
