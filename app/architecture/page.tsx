@@ -166,11 +166,7 @@ execute.
 
               <div className="mt-8 flex flex-wrap justify-center gap-2">
 
-                <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
-                  Deterministic
-                </span>
-
-                <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
+                               <span className="rounded-full border border-neutral-700 px-3 py-1 text-xs">
                   Authority Driven
                 </span>
 
