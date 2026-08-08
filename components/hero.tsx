@@ -13,15 +13,11 @@ export default function Hero() {
           </h1>
 
           <div className="mt-10 max-w-4xl">
-            <p className="text-xl leading-9 text-neutral-700">
-              You don't have to deploy AI agents to be exposed to them.
-              Customers, employees, partners, vendors, and third-party
-              applications can bring AI agents into your systems.
-            </p>
+      
 
             <p className="mt-5 text-xl leading-9 text-neutral-700">
               Parmana ensures your authority determines what gets
-              executed—not the AI agent.
+              executed not the AI agent.
             </p>
           </div>
 
