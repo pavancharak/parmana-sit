@@ -1,9 +1,9 @@
 export default function Hero() {
   return (
-    <section className="border-b border-neutral-200 bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
+    <section>
+      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
         <div className="max-w-5xl">
-          <p className="text-sm font-medium tracking-widest text-neutral-500">
+          <p className="text-sm font-medium tracking-[0.2em] text-neutral-500">
             EXECUTION AUTHORIZATION INFRASTRUCTURE
           </p>
 
@@ -12,8 +12,14 @@ export default function Hero() {
             you risk losing your customers.
           </h1>
 
-          <div className="mt-10 max-w-3xl">
+          <div className="mt-10 max-w-4xl">
             <p className="text-xl leading-9 text-neutral-700">
+              You don't have to deploy AI agents to be exposed to them.
+              Customers, employees, partners, vendors, and third-party
+              applications can bring AI agents into your systems.
+            </p>
+
+            <p className="mt-5 text-xl leading-9 text-neutral-700">
               Parmana ensures your authority determines what gets
               executed—not the AI agent.
             </p>
