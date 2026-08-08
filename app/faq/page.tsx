@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "Does Parmana give AI agents authority?",
     answer:
-      "No. AI agents can initiate execution requests, but initiating a request does not create authority. Institutional authority determines what gets executed—not the AI agent.",
+      "No. AI agents can initiate execution requests, but initiating a request does not create authority. Institutional authority determines what gets executed not the AI agent.",
   },
   {
     question: "What happens if an AI agent is compromised?",
