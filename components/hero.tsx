@@ -1,13 +1,13 @@
 export default function Hero() {
   return (
     <section>
-      <div>
-        <div>
-          <span className="text-sm font-medium tracking-[0.2em] text-neutral-500">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="py-24 lg:py-32">
+          <p className="text-sm font-medium tracking-[0.2em] text-neutral-500">
             EXECUTION AUTHORIZATION INFRASTRUCTURE
-          </span>
+          </p>
 
-          <h1 className="mt-8 text-5xl font-semibold tracking-tight text-neutral-900 md:text-6xl lg:text-7xl">
+          <h1 className="mt-8 max-w-6xl text-5xl font-semibold tracking-tight text-neutral-900 md:text-6xl lg:text-7xl">
             AI can execute.
             <br />
             You remain accountable.
