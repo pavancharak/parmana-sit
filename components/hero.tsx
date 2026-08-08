@@ -229,8 +229,8 @@ export default function Hero() {
                 </h3>
 
                 <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-neutral-600">
-                  The critical question is whether your institution—not the AI
-                  agent—determines which actions are allowed to change your
+                  The critical question is whether your institution not the AI
+                  agent determines which actions are allowed to change your
                   business systems.
                 </p>
 
