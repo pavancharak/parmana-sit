@@ -14,7 +14,7 @@ export default function Hero() {
 
           <div className="mt-10 max-w-3xl">
             <p className="text-2xl font-medium leading-10 text-neutral-900">
-              If you can't, your business—and your customers—are exposed.
+              If you can't, your business and your customers are exposed.
             </p>
 
             <p className="mt-6 text-xl leading-9 text-neutral-700">
