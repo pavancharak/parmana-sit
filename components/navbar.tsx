@@ -6,6 +6,11 @@ const navigation = [
   { name: "Architecture", href: "/architecture" },
   { name: "FAQ", href: "/faq" },
   { name: "Company", href: "/company" },
+  {
+    name: "Official blog",
+    href: "https://parmanasystems.substack.com/",
+    external: true,
+  },
 ];
 
 export default function Navbar() {
