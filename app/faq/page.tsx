@@ -35,7 +35,7 @@ const faqs = [
   {
     question: "Does Parmana protect against frontier AI models?",
     answer:
-      "Parmana is designed to preserve institutional authorization regardless of the AI model initiating an execution request. The authorization decision is based on institutional authority and policy—not on the model's reputation, capability, or alignment.",
+      "Parmana is designed to preserve institutional authorization regardless of the AI model initiating an execution request. The authorization decision is based on institutional authority and policy not on the model's reputation, capability, or alignment.",
     highlight: true,
   },
   {
