@@ -115,7 +115,7 @@ const faqs = [
   {
     question: "What is the core principle behind Parmana?",
     answer:
-      "AI has intelligence. Your institution has authority. No matter what happens to the AI, institutional authority determines what gets executed—not the AI agent.",
+      "AI has intelligence. Your institution has authority. No matter what happens to the AI, institutional authority determines what gets executed not the AI agent.",
   },
 ];
 
