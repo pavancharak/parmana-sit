@@ -119,7 +119,7 @@ export default function Hero() {
               <p className="text-xl leading-9 text-neutral-700">
                 If AI agents can execute without your authorization, you have
                 accountability without authority. Parmana ensures your
-                authority determines what gets executed not the AI agent.
+                authority determines what gets executed—not the AI agent.
               </p>
             </div>
 
@@ -202,7 +202,7 @@ export default function Hero() {
                     type="button"
                     onClick={nextQuestion}
                     disabled={answers[currentQuestion] === undefined}
-                    className="inline-flex h-11 items-center justify-center rounded-md bg-black px-7 text-sm font-medium text-white transition-colors hover:bg-neutral-800 disabled:cursor-not-allowed disabled:opacity-30"
+                    className="inline-flex h-11 items-center justify-center rounded-md bg-black px-7 text-sm font-medium !text-white transition-colors hover:bg-neutral-800 disabled:cursor-not-allowed disabled:opacity-30"
                   >
                     {currentQuestion === questions.length - 1
                       ? "See Results"
@@ -246,7 +246,7 @@ export default function Hero() {
                   <a
                     href="/architecture"
                     onClick={closeTest}
-                    className="inline-flex h-11 items-center justify-center rounded-md bg-black px-6 text-sm font-medium text-white hover:bg-neutral-800"
+                    className="inline-flex h-11 items-center justify-center rounded-md bg-black px-6 text-sm font-medium !text-white hover:bg-neutral-800"
                   >
                     Explore Architecture
                   </a>
