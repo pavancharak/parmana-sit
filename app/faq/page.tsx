@@ -28,6 +28,16 @@ const faqs = [
       "A compromised or manipulated AI agent can still request an action, but the request must satisfy the institution's authorization requirements before execution.",
   },
   {
+    question: "Can Parmana protect against rogue or jailbroken AI agents?",
+    answer:
+      "Parmana does not need to determine whether an AI agent is trustworthy. A rogue, compromised, manipulated, or jailbroken agent may generate an execution request, but the requested action still has to satisfy institutional authorization before the business system executes it.",
+  },
+  {
+    question: "Does Parmana protect against frontier AI models?",
+    answer:
+      "Parmana is designed to preserve institutional authorization regardless of the AI model initiating an execution request. The authorization decision is based on institutional authority and policy—not on the model's reputation, capability, or alignment.",
+  },
+  {
     question: "What if the AI agent ignores its instructions?",
     answer:
       "Parmana does not rely on the AI agent obeying instructions to preserve institutional authority. Authorization is evaluated independently against the institution's defined authority and policies.",
@@ -38,14 +48,59 @@ const faqs = [
       "No. AI safety focuses on improving AI behavior. Parmana addresses a different question: is this action authorized by the institution?",
   },
   {
-    question: "Does Parmana replace existing security?",
+    question: "Does Parmana replace existing AI security solutions?",
     answer:
-      "No. Identity, access control, security, monitoring, and AI safety remain important. Parmana addresses authorization of the actual execution request against institutional authority and policy.",
+      "No. Parmana is designed to work alongside existing security, identity, access control, AI security, monitoring, and governance solutions. Those systems can help determine who or what can access a system. Parmana determines whether a requested execution is authorized by the institution.",
+  },
+  {
+    question: "Can I keep my existing AI security stack?",
+    answer:
+      "Yes. Parmana does not require an institution to replace its existing security controls. It adds an execution authorization layer that addresses whether an action is authorized, even when the request originates from an already authenticated or permitted AI system.",
+  },
+  {
+    question: "Is Parmana tied to a specific AI model?",
+    answer:
+      "No. Parmana is model-agnostic. It can govern execution requests regardless of which AI model or agent generated them.",
+  },
+  {
+    question: "Is Parmana tied to a specific AI vendor?",
+    answer:
+      "No. Parmana is vendor-agnostic. Institutions can use different AI models, agents, vendors, or applications while maintaining the same institutional authorization layer.",
+  },
+  {
+    question: "Is Parmana technology-agnostic?",
+    answer:
+      "Parmana is designed as an execution authorization layer rather than an AI model or application platform. Its purpose is to apply institutional authority to execution requests independently of the underlying AI technology.",
+  },
+  {
+    question: "Can Parmana run on-premises?",
+    answer:
+      "Parmana is designed to support enterprise deployment requirements, including environments where institutions require control over their infrastructure and execution authorization layer.",
+  },
+  {
+    question: "Can Parmana run in a hybrid environment?",
+    answer:
+      "Parmana is designed to support hybrid enterprise environments where AI systems and business systems may operate across different infrastructure and deployment environments.",
+  },
+  {
+    question: "Is Parmana cloud-only?",
+    answer:
+      "No. Parmana is intended to support deployment models appropriate for institutional environments, including cloud, on-premises, and hybrid architectures.",
   },
   {
     question: "Who actually executes the action?",
     answer:
-      "The relevant business system remains the execution system. Parmana evaluates whether the requested action is authorized before it reaches that system.",
+      "The relevant business system remains the execution system. Parmana does not become the business system or take ownership of execution. Parmana evaluates whether the requested action is authorized before the existing system executes it.",
+  },
+  {
+    question: "Does Parmana replace my existing business systems?",
+    answer:
+      "No. Parmana is designed to work with existing systems of record and business applications. The institution's existing business systems remain responsible for executing the authorized action.",
+  },
+  {
+    question: "What happens if an AI agent tries to bypass Parmana?",
+    answer:
+      "Parmana's purpose is to establish an authorization boundary around governed execution paths. An action that reaches a governed execution path must satisfy the institution's authorization requirements before execution.",
   },
   {
     question: "What types of actions can Parmana govern?",
