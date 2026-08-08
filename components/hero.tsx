@@ -1,21 +1,22 @@
 export default function Hero() {
   return (
     <section>
-      <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-        <div className="max-w-5xl">
-          <p className="text-sm font-medium tracking-[0.2em] text-neutral-500">
+      <div>
+        <div>
+          <span className="text-sm font-medium tracking-[0.2em] text-neutral-500">
             EXECUTION AUTHORIZATION INFRASTRUCTURE
-          </p>
+          </span>
 
           <h1 className="mt-8 text-5xl font-semibold tracking-tight text-neutral-900 md:text-6xl lg:text-7xl">
-            Your customers won't trust you if AI can execute on your systems
-            without your authority.
+            AI can execute on your systems. You remain accountable for what it
+            does.
           </h1>
 
           <div className="mt-10 max-w-4xl">
             <p className="text-xl leading-9 text-neutral-700">
-              Parmana ensures your authority determines what gets executed  not
-              the AI agent.
+              If AI agents can execute without your authorization, you have
+              accountability without authority. Parmana ensures your authority
+              determines what gets executed not the AI agent.
             </p>
           </div>
 
