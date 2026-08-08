@@ -8,15 +8,16 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-8 text-5xl font-semibold tracking-tight text-neutral-900 md:text-6xl lg:text-7xl">
-            AI can execute on your systems. You remain accountable for what it
-            does.
+            AI can execute.
+            <br />
+            You remain accountable.
           </h1>
 
           <div className="mt-10 max-w-4xl">
             <p className="text-xl leading-9 text-neutral-700">
               If AI agents can execute without your authorization, you have
               accountability without authority. Parmana ensures your authority
-              determines what gets executed not the AI agent.
+              determines what gets executed—not the AI agent.
             </p>
           </div>
 
