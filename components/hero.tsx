@@ -13,11 +13,9 @@ export default function Hero() {
           </h1>
 
           <div className="mt-10 max-w-4xl">
-      
-
-            <p className="mt-5 text-xl leading-9 text-neutral-700">
-              Parmana ensures your authority determines what gets
-              executed not the AI agent.
+            <p className="text-xl leading-9 text-neutral-700">
+              Your customers won't trust you if AI can execute on your systems
+              without your authority.
             </p>
           </div>
 
@@ -26,7 +24,7 @@ export default function Hero() {
               href="/why"
               className="inline-flex h-12 items-center justify-center rounded-md bg-black px-8 text-sm font-medium !text-white transition-colors duration-200 hover:bg-neutral-800"
             >
-              See How Parmana Works
+              Retain Your Authority Over AI Execution
             </a>
 
             <a
