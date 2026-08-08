@@ -36,6 +36,7 @@ const faqs = [
     question: "Does Parmana protect against frontier AI models?",
     answer:
       "Parmana is designed to preserve institutional authorization regardless of the AI model initiating an execution request. The authorization decision is based on institutional authority and policy—not on the model's reputation, capability, or alignment.",
+    highlight: true,
   },
   {
     question: "What if the AI agent ignores its instructions?",
@@ -115,7 +116,7 @@ const faqs = [
   {
     question: "What is the core principle behind Parmana?",
     answer:
-      "AI has intelligence. Your institution has authority. No matter what happens to the AI, institutional authority determines what gets executed not the AI agent.",
+      "AI has intelligence. Your institution has authority. No matter what happens to the AI, institutional authority determines what gets executed—not the AI agent.",
   },
 ];
 
@@ -142,9 +143,16 @@ export default function FAQPage() {
               </p>
             </div>
 
-            <div className="mt-20 max-w-4xl divide-y divide-neutral-200">
+            <div className="mt-20 max-w-4xl">
               {faqs.map((faq) => (
-                <div key={faq.question} className="py-10">
+                <div
+                  key={faq.question}
+                  className={
+                    faq.highlight
+                      ? "my-10 rounded-2xl border-2 border-neutral-900 bg-neutral-50 p-8"
+                      : "border-b border-neutral-200 py-10"
+                  }
+                >
                   <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">
                     {faq.question}
                   </h2>
