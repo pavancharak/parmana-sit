@@ -7,11 +7,6 @@ export default function Hero() {
             EXECUTION AUTHORIZATION INFRASTRUCTURE
           </p>
 
-          <h1 className="mt-8 text-5xl font-semibold tracking-tight text-neutral-900 md:text-6xl lg:text-7xl">
-            If you can't control what AI agents can execute on your systems,
-            you risk losing your customers.
-          </h1>
-
           <div className="mt-10 max-w-4xl">
             <p className="text-xl leading-9 text-neutral-700">
               Your customers won't trust you if AI can execute on your systems
