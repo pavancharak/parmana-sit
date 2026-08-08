@@ -8,8 +8,8 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-8 text-5xl font-semibold tracking-tight text-neutral-900 md:text-6xl lg:text-7xl">
-            Can you guarantee that no AI agent can execute beyond your
-            authority on your company's systems?
+            Can you guarantee that no AI agent can trigger an unauthorized
+            action on your company's systems that puts your customers at risk?
           </h1>
 
           <div className="mt-10 max-w-3xl">
