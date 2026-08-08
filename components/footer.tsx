@@ -11,7 +11,8 @@ export default function Footer() {
             </h3>
 
             <p className="mt-6 text-neutral-400 leading-8">
-              Execution Authorization Infrastructure for the AI Agent Era.
+              Parmana ensures institutions don&apos;t lose authority to AI
+              agents.
             </p>
           </div>
 
@@ -21,15 +22,24 @@ export default function Footer() {
                 Learn
               </p>
 
-              <Link href="/why" className="block text-neutral-300 hover:text-white">
+              <Link
+                href="/why"
+                className="block text-neutral-300 hover:text-white"
+              >
                 Why
               </Link>
 
-              <Link href="/execution" className="block text-neutral-300 hover:text-white">
+              <Link
+                href="/execution"
+                className="block text-neutral-300 hover:text-white"
+              >
                 Execution
               </Link>
 
-              <Link href="/architecture" className="block text-neutral-300 hover:text-white">
+              <Link
+                href="/architecture"
+                className="block text-neutral-300 hover:text-white"
+              >
                 Architecture
               </Link>
             </div>
@@ -39,11 +49,17 @@ export default function Footer() {
                 Company
               </p>
 
-              <Link href="/company" className="block text-neutral-300 hover:text-white">
+              <Link
+                href="/company"
+                className="block text-neutral-300 hover:text-white"
+              >
                 Company
               </Link>
 
-              <Link href="/contact" className="block text-neutral-300 hover:text-white">
+              <Link
+                href="/contact"
+                className="block text-neutral-300 hover:text-white"
+              >
                 Contact
               </Link>
             </div>

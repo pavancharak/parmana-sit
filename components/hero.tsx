@@ -8,38 +8,27 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-8 text-6xl font-semibold tracking-tight text-neutral-900 md:text-7xl">
-            Unauthorized
+            AI Has Intelligence.
             <br />
-            Execution Is Becoming
-            <br />
-            The Internet&apos;s Next Risk.
+            Your Institution Has Authority.
           </h1>
 
-          <div className="mt-12 max-w-2xl space-y-6">
-            <p className="body">
-              AI agents are transforming the internet from a network of
-              information into a network of autonomous execution.
+          <div className="mt-12 max-w-3xl space-y-6">
+            <p className="text-2xl leading-10 text-neutral-700">
+              Parmana ensures your institution does not lose authority to AI
+              agents.
             </p>
 
-            <p className="body">
-              Every execution request has the potential to change the state of
-              a business system.
-            </p>
-
-            <p className="text-xl font-semibold leading-9 text-neutral-900">
-              Organizations need a way to ensure that only authorized actions
-              execute.
+            <p className="text-xl font-medium leading-9 text-neutral-900">
+              No matter what happens to the AI, your institution's
+              authority determines what gets executed not the AI agent.
             </p>
           </div>
 
           <div className="mt-14 flex flex-wrap items-center gap-4">
             <a
               href="/why"
-              className="inline-flex h-12 items-center justify-center rounded-md px-8 text-sm font-medium transition-colors duration-200"
-              style={{
-                backgroundColor: "#000",
-                color: "#fff",
-              }}
+              className="inline-flex h-12 items-center justify-center rounded-md bg-black px-8 text-sm font-medium !text-white transition-colors duration-200 hover:bg-neutral-800"
             >
               Why It Matters
             </a>

@@ -11,9 +11,7 @@ export default function ExecutionPage() {
         <section className="bg-white">
           <div className="container section">
             <div className="max-w-5xl">
-              <p className="label">
-                Execution
-              </p>
+              <p className="label">Execution</p>
 
               <h1 className="heading-xl mt-6">
                 Execution Changes
@@ -63,25 +61,15 @@ export default function ExecutionPage() {
           label="Execution"
           title="Execution Changes Business Systems."
         >
-          <p className="body">
-            Transfer funds.
-          </p>
+          <p className="body">Transfer funds.</p>
 
-          <p className="body">
-            Deploy software.
-          </p>
+          <p className="body">Deploy software.</p>
 
-          <p className="body">
-            Approve a payment.
-          </p>
+          <p className="body">Approve a payment.</p>
 
-          <p className="body">
-            Modify customer records.
-          </p>
+          <p className="body">Modify customer records.</p>
 
-          <p className="body">
-            Provision infrastructure.
-          </p>
+          <p className="body">Provision infrastructure.</p>
 
           <p className="body highlight">
             Execution changes the state of a business system.
@@ -90,22 +78,22 @@ export default function ExecutionPage() {
 
         <Section
           label="The Shift"
-          title="AI Agents Can Execute."
+          title="AI Agents Can Initiate Execution."
         >
           <p className="body">
             Earlier generations of AI primarily generated information.
           </p>
 
           <p className="body">
-            AI agents can now execute business actions.
+            AI agents can now initiate business actions.
           </p>
 
           <p className="body">
-            They interact directly with enterprise systems.
+            They can interact directly with enterprise systems.
           </p>
 
           <p className="body highlight">
-            This changes enterprise software fundamentally.
+            But intelligence does not create authority.
           </p>
         </Section>
 
@@ -115,14 +103,38 @@ export default function ExecutionPage() {
           title="Every Execution Requires Authorization."
         >
           <p className="body">
-            Every execution request should answer one question before reaching a
-            business system.
+            Every execution request should answer one question before reaching
+            a business system.
           </p>
 
           <h3 className="mt-8 text-4xl font-semibold tracking-tight">
-            Should this action be allowed to execute?
+            Is this action authorized by the institution?
           </h3>
+
+          <p className="body highlight mt-8">
+            Institutional authority not the AI agent determines what gets
+            executed.
+          </p>
         </Section>
+
+        <section className="bg-white">
+          <div className="container section">
+            <div className="max-w-4xl">
+              <p className="label">Parmana</p>
+
+              <h2 className="heading-lg mt-6">
+                Your Institution Has Authority.
+                <br />
+                Not the AI Agent.
+              </h2>
+
+              <p className="body mt-12">
+                Parmana ensures institutions don&apos;t lose authority to AI
+                agents.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
