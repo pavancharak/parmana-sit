@@ -6,9 +6,7 @@ export default function Footer() {
       <div className="container py-20">
         <div className="flex flex-col justify-between gap-12 md:flex-row">
           <div className="max-w-md">
-            <h3 className="text-2xl font-semibold tracking-tight">
-              Parmana
-            </h3>
+            <h3 className="text-2xl font-semibold">Parmana</h3>
 
             <p className="mt-6 text-neutral-400 leading-8">
               Parmana ensures institutions don&apos;t lose authority to AI
@@ -41,6 +39,13 @@ export default function Footer() {
                 className="block text-neutral-300 hover:text-white"
               >
                 Architecture
+              </Link>
+
+              <Link
+                href="/faq"
+                className="block text-neutral-300 hover:text-white"
+              >
+                FAQ
               </Link>
             </div>
 

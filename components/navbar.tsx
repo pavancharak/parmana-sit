@@ -4,6 +4,7 @@ const navigation = [
   { name: "Why", href: "/why" },
   { name: "Execution", href: "/execution" },
   { name: "Architecture", href: "/architecture" },
+  { name: "FAQ", href: "/faq" },
   { name: "Company", href: "/company" },
 ];
 
