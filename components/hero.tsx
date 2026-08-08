@@ -8,16 +8,12 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-8 text-5xl font-semibold tracking-tight text-neutral-900 md:text-6xl lg:text-7xl">
-            Can you guarantee that no AI agent can trigger an unauthorized
-            action on your company's systems that puts your customers at risk?
+            If you can't control what AI agents can execute on your systems,
+            you risk losing your customers.
           </h1>
 
           <div className="mt-10 max-w-3xl">
-            <p className="text-2xl font-medium leading-10 text-neutral-900">
-              If you can't, your business and your customers are exposed.
-            </p>
-
-            <p className="mt-6 text-xl leading-9 text-neutral-700">
+            <p className="text-xl leading-9 text-neutral-700">
               Parmana ensures your authority determines what gets
               executed—not the AI agent.
             </p>
